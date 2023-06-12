@@ -1,0 +1,172 @@
+.home {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.home .particle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    color: white;
+}
+
+.content h1 {
+    margin: 0;
+    font-size: 60px;
+}
+
+p {
+    margin: 0;
+    font-size: 50px;
+}
+
+.name {
+    color: var(--secondary-color);
+}
+
+.picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.circle {
+    z-index: 1;
+    width: 400px;
+    height: 400px;
+    background-color: #121212;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-left: 40px;
+    margin-bottom: 70px;
+    box-shadow: 0 3px 15px rgba(255, 255, 255, 0.5);
+}
+
+.circle:hover,
+.image:hover {
+    cursor: pointer;
+}
+
+.image {
+    z-index: 2;
+    transform: scale(0.8);
+    clip-path: circle(50%);
+    position: absolute;
+}
+
+.content-buttons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.content-buttons .primary-button {
+    margin-right: 20px;
+}
+
+.primary-button {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    background-color: var(--primary-color-light);
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.primary-button a {
+    margin-right: 5px;
+}
+
+.primary-button:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+.secondary-button {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    background-color: #e6e6e6;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-color-light);
+    outline: 2px solid var(--primary-color-light);
+}
+
+.secondary-button a {
+    margin-right: 5px;
+}
+
+.secondary-button:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.socials {
+    position: relative;
+    margin-top: 40px;
+}
+
+.socials .social-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.socials .social-list li {
+    display: inline-block;
+    margin-bottom: 14px;
+}
+
+.social-list a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.linkedin {
+    background-color: #0A74B3;
+}
+
+.xing {
+    background-color: #14605E;
+}
+
+.github {
+    background-color: #1B1F23;
+}
+

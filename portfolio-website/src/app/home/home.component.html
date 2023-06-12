@@ -1,0 +1,30 @@
+<section class="home">
+    <ng-particles class="particle" [id]="id" [options]="particlesOptions" [particlesInit]="particlesInit" (particlesLoaded)="particlesLoaded($event)"></ng-particles>
+
+    <div class="content">
+        <h1> Hi, <br> mein Name ist <a class="name"> Michel</a></h1>
+        <p><span class="typeanimator" typingAnimator [sentences]="words"></span></p>
+        <div class="content-buttons">
+            <div class="primary-button">
+                <a>About Me</a>
+                <fa-icon [icon]="['fas', 'user-circle']" size="lg"></fa-icon>
+            </div>
+            <div class="secondary-button">
+                <a>Contact</a>
+                <fa-icon [icon]="['fas', 'envelope']" size="lg"></fa-icon>
+            </div>
+        </div>
+        <div class="socials">
+            <ul class="social-list">
+                <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/michel-marquardt-198035278/"><fa-icon [icon]="['fab', 'linkedin']" size="xl"></fa-icon></a></li>
+                <li><a class="xing" aria-label="Xing" href="https://www.xing.com/profile/Michel_Marquardt021464/cv"><fa-icon [icon]="['fab', 'square-xing']" size="xl"></fa-icon></a></li>
+                <li><a class="github" aria-label="Github" href="https://github.com/marquardtmichel"><fa-icon [icon]="['fab', 'github']" size="xl"></fa-icon></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="picture">
+        <span class="circle"></span>
+        <img class="image" src="../../assets/picture.png" alt="picture">
+    </div>
+</section>
