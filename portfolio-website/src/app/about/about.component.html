@@ -1,3 +1,31 @@
-<section class="about">
-    <h1>Das ist der About-Teil</h1>
+<section id="about" class="about">
+    <h1 class="heading" data-aos="fade-down">About <a>Me</a></h1>
+    <div class="about-content">
+        <div class="image" data-aos="zoom-in" data-aos-duration="1000">
+            <img class="desk" src="../../assets/desk.png" alt="desk">
+        </div>
+        <div class="information">
+            <p>In 2019 I started my computer science studies. 
+                There I discovered my passion for web and mobile development. 
+                In 2023 I was able to successfully complete my studies. 
+                My goal is to constantly work for myself and improve my coding skills. 
+            </p>
+
+            <div class="personal">
+                <div class="box">
+                    <p>Name:</p>
+                    <p>Age:</p>
+                    <p>Country:</p>
+                    <p>E-Mail:</p>
+                </div>
+    
+                <div class="box-content">
+                    <p>{{person.name}}</p>
+                    <p>{{person.age}}</p>
+                    <p>{{person.country}}</p>
+                    <p>{{person.email}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
