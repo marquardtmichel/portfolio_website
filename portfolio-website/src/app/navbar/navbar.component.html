@@ -1,10 +1,10 @@
 <div class="nav">
-    <img class="logo" src="../../assets/mmlogokleinweiss.png" alt="Logo">
+    <img class="logo" src="../../assets/mmlogokleinweiss.png" alt="Logo" (click)="rs.toHome()">
     <nav class="navcategories">
-        <a class="element" (click)="toHome()">Home</a>
-        <a class="element" (click)="toAbout()">About</a>
-        <a class="element">Skills</a>
-        <a class="element">Education</a>
-        <a class="element">Contact</a>
+        <a class="element" (click)="rs.toHome()">Home</a>
+        <a class="element" (click)="rs.toAbout()">About</a>
+        <a class="element" (click)="rs.toSkills()">Skills</a>
+        <a class="element" (click)="rs.toEducation()">Education</a>
+        <a class="element" (click)="rs.toContact()">Contact</a>
     </nav>
 </div>

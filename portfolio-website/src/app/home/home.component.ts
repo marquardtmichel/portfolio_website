@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MoveDirection, ClickMode, HoverMode, OutMode, Container, Engine } from 'tsparticles-engine';
 import { loadFull } from 'tsparticles';
+import { RoutingService } from '../service/routing-service.service';
 
 @Component({
   selector: 'port-home',
@@ -9,6 +10,7 @@ import { loadFull } from 'tsparticles';
 })
 export class HomeComponent {
 
+  constructor(public rs: RoutingService) {}
 
   words = ['Web Developer', 'Mobile Developer', 'Frontend Developer']
 

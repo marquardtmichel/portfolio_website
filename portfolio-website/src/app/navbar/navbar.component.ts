@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RoutingService } from '../service/routing-service.service';
 
 @Component({
   selector: 'port-navbar',
@@ -7,15 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  constructor(public rs: RoutingService) {}
+
   ngOnInit(): void {
       
   }
 
-  toHome() {
-    document.getElementById("home")?.scrollIntoView({behavior: "smooth"});
-  }
-
-  toAbout() {
-    document.getElementById("about")?.scrollIntoView({behavior: "smooth"});
-  }
 }

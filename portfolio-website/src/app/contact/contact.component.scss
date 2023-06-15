@@ -1,0 +1,110 @@
+.contact {
+    color: white;
+    min-height: 100vh;
+}
+
+.contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact h2 {
+    align-self: center;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+.contact h2 a {
+    color: var(--primary-color-light);
+}
+
+.contact .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+    height: 30rem;
+    background-color: #121212;
+    padding: 2rem 4rem 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 1px 8px rgba(200,200,200, 0.3)
+}
+
+.contact .form .image {
+    margin-top: 3rem;
+    flex: 1 1 25rem;
+}
+
+.contact .form img {
+    width: 30rem;
+    height: auto;
+}
+
+.contact .form .form-group {
+    height: 45px;
+    position: relative;
+    margin: 0 2rem 2rem 0;
+    width: 80%;
+}
+
+form fa-icon {
+    position: absolute;
+    top: 25%;
+    left: 12px;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.contact .form .form-group input,
+#message {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 16px 0 48px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    background-color: #575757;
+    resize: none;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    color: rgb(220, 220, 220);
+}
+
+input::placeholder,
+#message::placeholder {
+    color: rgb(220, 220, 220);
+}
+
+
+#email:focus,
+#fullname:focus,
+#message:focus  {
+    border: 1px solid var(--primary-color-light);
+    padding-left: 47px;
+}
+
+#email:focus ~ fa-icon,
+#fullname:focus ~ fa-icon,
+#message:focus ~ fa-icon {
+    color: var(--primary-color-light);
+}
+
+form #message {
+    min-height: 130px;
+    max-height: 230px;
+    min-width: 100%;
+    max-width: 100%;
+    font-family: 'Montserrat';
+    padding-top: 10px;
+}
+
+.submit {
+    margin-top: 120px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}

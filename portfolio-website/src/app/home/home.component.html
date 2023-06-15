@@ -5,11 +5,11 @@
         <h1> Hi, <br> mein Name ist <a class="name"> Michel</a></h1>
         <p><span class="typeanimator" typingAnimator [sentences]="words"></span></p>
         <div class="content-buttons">
-            <div class="primary-button">
+            <div class="primary-button" (click)="rs.toAbout()">
                 <a>About Me</a>
                 <fa-icon [icon]="['fas', 'user-circle']" size="lg"></fa-icon>
             </div>
-            <div class="secondary-button">
+            <div class="secondary-button" (click)="rs.toContact()">
                 <a>Contact</a>
                 <fa-icon [icon]="['fas', 'envelope']" size="lg"></fa-icon>
             </div>

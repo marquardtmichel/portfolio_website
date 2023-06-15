@@ -7,6 +7,10 @@
     --secondary-color-light: #A1E1FA;
 }
 
+* {
+    transition: all 0.1s linear;
+}
+
 body {
     font-family: 'Montserrat';
     margin: 0;
