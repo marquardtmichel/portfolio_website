@@ -1,7 +1,106 @@
-section {
-    background-color: #636363;
+.footer {
+    min-height: auto;
+    padding-top: 0;
+    background: #121212;
 }
 
-section h1 {
+.footer .box-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box {
+    margin: 0.5rem 0.5rem 2.5rem 0.5rem;
+}
+
+.footer .box-container .box h1 {
+    color: #e6e6e6;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.footer .box-container .box .port {
+    font-size: 18px;
+    letter-spacing: 10px;
+    color: #40c9ff;
+}
+
+.footer .box-container .box .port:hover {
+    cursor: auto;
+}
+
+.footer .box-container .box h3 {
+    font-size: 1.5rem;
+    color: #e6e6e6;
+    padding-bottom: 1rem;
+    font-weight: normal;
+}
+
+.footer .box-container .box a {
+    font-size: 1rem;
+    color: #e6e6e6;
+    display: block;
+    padding: 0.3rem 0;
+}
+
+.footer .box-container .box a:hover {
+    color: #40c9ff;
+    cursor: pointer;
+}
+
+.footer .box-container .box .socials {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .socials a {
+    height: 1rem;
+    width: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #40c9ff;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.footer .box-container .box .socials a fa-icon {
+    margin: -4px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .box-container .box .socials .link:hover {
+    background-color: #0A74B3;
+    color: #e6e6e6;
+}
+
+.footer .box-container .box .socials .xing:hover {
+    background-color: #14605E;
+    color: #e6e6e6;
+}
+
+.footer .box-container .box .socials .git:hover {
+    background-color: #1B1F23;
+    color: #e6e6e6;
+}
+
+.footer .credit {
+    width: 80%;
     margin: 0;
+    margin-left: 10%;
+    padding: 0.5rem 0 0.5rem 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #e6e6e6;
+    font-weight: normal;
+    border-top: 0.1rem solid #fff3;
+    position: relative;
+}
+
+.footer .credit a {
+    text-decoration: none;
+    color: #40c9ff;
 }

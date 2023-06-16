@@ -81,6 +81,7 @@ input::placeholder,
 #email:focus,
 #fullname:focus,
 #message:focus  {
+    width: 100.1%;
     border: 1px solid var(--primary-color-light);
     padding-left: 47px;
 }
@@ -100,13 +101,23 @@ form #message {
     padding-top: 10px;
 }
 
-.submit {
-    margin-top: 120px;
+.btn {
+    margin-top: 85px;
+    margin-left: 220px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--primary-color-light);
+    cursor: pointer;
+    padding: 12px 22px;
+    box-shadow: 1px 3px 7px var(--secondary-color);
+    font-family: 'Montserrat';
+    font-size: 16px;
 }
 
 .error {
-    color: red;
-    font-size: 12px;
+    color: #e01919;
+    font-size: 13px;
 }
 
 input:-webkit-autofill,

@@ -1,3 +1,28 @@
-<section>
-    <h1>This is the footer section! Cool!</h1>
+<section class="footer">
+    
+    <div class="box-container">
+
+        <div class="box">
+            <h1>Michel's</h1><a class="port">Portfolio</a>
+        </div>
+
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a (click)="rs.toHome()"><fa-icon [icon]="['fas', 'circle-arrow-right']"></fa-icon>Home</a>
+            <a (click)="rs.toAbout()"><fa-icon [icon]="['fas', 'circle-arrow-right']"></fa-icon>About</a>
+            <a (click)="rs.toSkills()"><fa-icon [icon]="['fas', 'circle-arrow-right']"></fa-icon>Skills</a>
+            <a (click)="rs.toEducation()"><fa-icon [icon]="['fas', 'circle-arrow-right']"></fa-icon>Education</a>
+        </div>
+
+        <div class="box">
+            <h3>Socials</h3>
+            <div class="socials">
+                <a class="link" href="https://www.linkedin.com/in/michel-marquardt-198035278/"><fa-icon [icon]="['fab', 'linkedin']"></fa-icon></a>
+                <a class="xing" href="https://www.xing.com/profile/Michel_Marquardt021464/cv"><fa-icon [icon]="['fab', 'xing']"></fa-icon></a>
+                <a class="git" href="https://github.com/marquardtmichel"><fa-icon [icon]="['fab', 'github']"></fa-icon></a>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="credit">Coded With Angular By <a href="https://www.linkedin.com/in/michel-marquardt-198035278/">Michel Marquardt</a></h1>
 </section>

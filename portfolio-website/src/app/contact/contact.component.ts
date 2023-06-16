@@ -44,18 +44,18 @@ export class ContactComponent implements OnInit {
     let statusMessageMessage = "";
 
     if (!this.Fullname.value) {
-      statusMessageName += '<p class="error" style="margin:0"><strong>Name</strong> cannot be empty</p>';
+      statusMessageName += '<p class="error" style="margin:1px"><strong>Name</strong> cannot be empty</p>';
       isDataValid = false;
     }
 
     if (!this.Email.value) {
-      statusMessageEmail += '<p class="error" style="margin:0"><strong>Email</strong> cannot be empty</p>';
+      statusMessageEmail += '<p class="error" style="margin:1px"><strong>Email</strong> cannot be empty</p>';
       isDataValid = false;
     } else {
       const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
       if (!re.test(this.Email.value)) {
-        statusMessageEmail += '<p class="error" style="margin:0"><strong>Email</strong> is invalid!</p>';
+        statusMessageEmail += '<p class="error" style="margin:1px"><strong>Email</strong> is invalid!</p>';
         isDataValid = false;
       }
     }
