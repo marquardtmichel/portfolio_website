@@ -1,4 +1,10 @@
-<section id="skills">
-    <h1>This is the skills section</h1>
+<section id="skills" class="flex flex-col items-center w-full" style="min-height: 100vh; background-color: #121212;">
+    <h1 class="text-white text-4xl mt-24" data-aos="fade-down">Programming Skills</h1>
+    <div class="flex w-full flex-wrap mt-10 items-center justify-center">
+        <div *ngFor="let skill of skills" class="w-80 h-40 bg-sky-800 flex flex-col items-center justify-center m-3 rounded-xl shadow-md shadow-gray-700 cursor-pointer hover:bg-sky-500 hover:scale-105">
+            <img class="image h-28 mb-2" [src]="skill.src" alt="bild">
+            <span class="text-white text-lg">{{skill.name}}</span>
+        </div>
+    </div> 
 </section>
 
